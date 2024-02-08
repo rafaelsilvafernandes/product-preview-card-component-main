@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Import font */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+#imgmobile {
+    display: none;
+}
+
+div#principal {
+    display: flex;
+}
+
+div#backimg > #imgdesktop{
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+div#main {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 1.5em;
+}
+
+#main, #backimg {
+    width: 300px;
+    height: 450px;
+}
+
+
+#perfume {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-variant-caps: all-small-caps;
+    font-size: 14px;
+    color: #00000094;
+    letter-spacing: 3px;
+}
+
+h1 {
+    line-height: 0.9em;
+    padding-top: 0.7em;
+    font-size: 2em;
+    font-family: 'Fraunces', sans-serif;
+    padding-bottom: 20px;
+}
+
+.text {
+    color: #0000008c;
+    font-variant-caps: all-small-caps;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 1.5em;
+}
+
+#number{
+    display: flex;
+    align-items: center;
+}
+
+#number1 {
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
+    font-family: 'Fraunces', sans-serif;
+    margin-right: 15px;
+}
+
+#number2 {
+    text-decoration: line-through;
+    color: #0000008e;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    padding: 20px;
+    margin-top: 2em;
+    font-weight: bolder;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+button > img {
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 29%);
+}
+
+@media screen and (max-width: 600px) {
+
+    div#principal {
+        flex-direction: column;
+    }
+
+    #imgdesktop{display: none;}
+    #backimg{height: 210px;}
+
+    #imgmobile{
+        display: block;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+}
