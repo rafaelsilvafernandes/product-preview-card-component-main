@@ -120,6 +120,34 @@ button:hover {
     #imgdesktop{display: none;}
     #backimg{height: 210px;}
 
+    #main {
+        height:300px;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 1.5em;
+
+    }
+
+    .text {
+        font-size: 14px;
+        margin-top: -12px;
+    }
+
+    #number {
+        margin-top: -15px;
+    }
+
+    #number1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        height: 10px;
+        margin-top: 8px;
+    }
+
     #imgmobile{
         display: block;
         width: 100%;
